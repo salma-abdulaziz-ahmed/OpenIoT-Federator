@@ -2,11 +2,11 @@
 
 In order to get this code working you need to:
 
-create an account on AWS IoT
-create a new OpenIoT thing in Registry 
-set the policy for OpenIoT connection under security
-create a certificate under security
-5)   Use your account on AWS to download three account related files:
+1) create an account on AWS IoT
+2) create a new OpenIoT thing in Registry 
+3) set the policy for OpenIoT connection under security
+4) create a certificate under security
+5)  Use your account on AWS to download three account related files:
 The certificate file
 The private key file 
 The Public key file 
