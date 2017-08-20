@@ -1,0 +1,148 @@
+﻿<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Publish Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Glyphicons Halflings';
+            src: url('fonts/fontawesome-webfont.woff2') format('woff2'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.ttf') format('truetype');
+        }
+    </style>
+
+
+</head>
+<!-- NAVBAR
+================================================== -->
+
+<body>
+
+
+    <div class="container">
+        <div style="margin: 90px 0;"></div>
+
+        <ol class="breadcrumb">
+            <li><a href="select_page.html">Home</a></li>
+            <li class="active">Publish</li>
+        </ol>
+        <div style="margin: 40px 0;"></div>
+
+        <div class="row" id="sensorList">
+            <h2>Publish</h2>
+            <div style="margin: 30px 0;"></div>
+
+            <h4>List of all the available sensors :</h4>
+            <div style="margin: 20px 0;"></div>
+
+        </div>
+        <!--/row-->
+    </div>
+    <!--/container -->
+
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+    <script id="sensor-info-template" type="text/x-handlebars-template">
+        {{#if result.length}} {{#each result}}
+
+        <div class="col-md-4">
+            <div class="thumbnail" style="padding:0; height:273px">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=30&bg=428BCA&txtcolor=ffffff&txt=Sensor+Information&w=640&h=125" class="">
+                <div class="caption">
+                    <h4 class="">{{title}}</h4>
+					<p class=""> Measuring: {{measure}}</p>
+                    <p class="">Location: {{location}}</p>
+
+                    <p class="" URL: {{url}} </p> 
+					<input class="btn btn-default btn-xs btn-primary" id="publish" type="button" onclick="publishWithAjax('{{sensorInfo}}')" value = "Publish" /> 
+					
+                </div>
+            </div>		
+        </div>		
+	
+        {{/each}} {{/if}}
+
+    </script>
+
+    <script>
+        $.getJSON('http://localhost:4567/getAvailableSensors?callback=?', function(data) {});
+
+        function res_callback(data) {
+            fillListContent(data);
+
+        }
+
+        function fillListContent(data) {
+            var jsonArray = [];
+
+            for (i = 0; i < data.result.length; i++) {
+                var jsonObject = {};
+                title = data.result[i].split("/");
+                jsonObject.measure = title[1];
+                jsonObject.location = title[2];
+                //jsonObject.title = "("+title[0]+")"+" measuring "+"("+title[1]+")"+" in "+"("+title[2]+")";
+                jsonObject.title = title[0];
+                jsonObject.sensorInfo=data.result[i];
+                jsonArray.push(jsonObject);
+            }
+            var newList = {};
+            newList.result = jsonArray;
+
+            //js replace string
+            var source = $("#sensor-info-template").html();
+            var template = Handlebars.compile(source);
+            var html = template(newList);
+            var listWrap = $("#sensorList");
+            listWrap.append(html);
+        }
+		
+
+    </script>
+	
+<script>
+function publishWithJQ(addr){
+        $(this).click(function(){
+             $.post("publish.php",{name: addr},function(data,status){
+		 $('#stage').html(data);});
+		  });
+		  
+		  }
+		  
+</script>
+
+<script>
+function publishWithAjax(addr){
+
+$.ajax({
+
+        type:"POST",
+        url:'http://localhost:4567/postPublishTopic',
+        data:{publishTopic:addr},
+        //can send multipledata like {data1:var1,data2:var2,data3:var3
+        //can use dataType:'text/html' or 'json' if response type expected 
+        success:function(responsedata){
+               // process on data
+               alert("got response as "+"'"+responsedata+"'");
+
+        }
+     });
+}
+</script>
+
+</body>
+
+</html>
