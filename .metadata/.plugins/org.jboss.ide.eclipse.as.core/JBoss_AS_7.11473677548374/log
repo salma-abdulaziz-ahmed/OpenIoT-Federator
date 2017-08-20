@@ -1,0 +1,86 @@
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-09-12 11:53:35.420
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-09-12 11:53:35.632
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-09-12 12:32:59.382
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-09-12 12:33:01.343
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-09-12 12:33:41.682
+!MESSAGE Module lsm-light.server on JBoss AS 7.1 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-09-12 12:34:06.383
+!MESSAGE Module scheduler.core on JBoss AS 7.1 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-09-12 12:34:27.602
+!MESSAGE Module sdum.core on JBoss AS 7.1 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-09-12 12:34:45.558
+!MESSAGE Module security.management on JBoss AS 7.1 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-09-12 12:35:04.857
+!MESSAGE Module security.server on JBoss AS 7.1 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-09-12 12:36:20.760
+!MESSAGE Module ui.requestDefinition on JBoss AS 7.1 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-09-12 12:36:37.097
+!MESSAGE Module ui.requestPresentation on JBoss AS 7.1 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-09-12 12:36:52.416
+!MESSAGE Module ui.schemaeditor on JBoss AS 7.1 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2016-09-12 12:45:58.475
+!MESSAGE Server processes have been terminated.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-09-27 17:04:16.201
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-09-27 17:04:16.516
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-09-27 17:13:56.178
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-09-27 17:13:56.401
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-09-28 11:40:14.601
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-09-28 11:40:15.235
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2016-09-28 11:42:25.825
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-09-28 11:42:31.936
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-09-28 11:42:33.669
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-09-28 11:43:11.402
+!MESSAGE Module lsm-light.server on JBoss AS 7.1 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-09-28 11:43:31.433
+!MESSAGE Module lsm-light.server on JBoss AS 7.1 still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-09-28 11:43:40.474
+!MESSAGE Module scheduler.core on JBoss AS 7.1 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-09-28 11:44:00.498
+!MESSAGE Module scheduler.core on JBoss AS 7.1 still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2016-09-28 11:44:31.790
+!MESSAGE Server processes have been terminated.

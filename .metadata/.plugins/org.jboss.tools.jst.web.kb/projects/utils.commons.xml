@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects>
+  <project name="sdum.core"/>
+  <project name="security.management"/>
+  <project name="ui.schemaeditor"/>
+  <project name="ui.requestDefinition"/>
+  <project name="ui.requestCommons"/>
+  <project name="ui.requestPresentation"/>
+  <project name="scheduler.core"/>
+  <project name="security.client"/>
+  <project name="lsm-light.server"/>
+  <project name="security.server"/>
+  <project name="lsm-light.client"/>
+ </used-by-projects>
+ <paths>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar"/>
+ </paths>
+ <validation>
+  <el>
+   <linked-el length="24" name="%0" offset="3738" path="%1"/>
+   <linked-el length="26" name="%2" offset="3579" path="%1"/>
+   <linked-el length="24" name="%3" offset="3676" path="%1"/>
+   <linked-el length="24" name="%4" offset="3738" path="%1"/>
+   <linked-el length="24" name="%4" offset="3676" path="%1"/>
+   <linked-el length="21" name="%5" offset="3416" path="%1"/>
+   <linked-el length="21" name="%6" offset="3416" path="%1"/>
+   <linked-el length="26" name="%7" offset="3579" path="%1"/>
+   <linked-el length="26" name="%8" offset="3579" path="%1"/>
+   <linked-el length="24" name="%9" offset="3738" path="%1"/>
+   <linked-el length="24" name="%9" offset="3676" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="maven.compiler.target" value="%0"/>
+  <alias path="/utils.commons/pom.xml" value="%1"/>
+  <alias path="version.compiler" value="%2"/>
+  <alias path="maven.compiler.source" value="%3"/>
+  <alias path="maven" value="%4"/>
+  <alias path="project.artifactId" value="%5"/>
+  <alias path="project" value="%6"/>
+  <alias path="version.compiler.plugin" value="%7"/>
+  <alias path="version" value="%8"/>
+  <alias path="maven.compiler" value="%9"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>

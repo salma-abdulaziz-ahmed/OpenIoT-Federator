@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.amazonaws.services.iot.client.AWSIotMqttClient"/>
+<fullyQualifiedTypeName name="java.security.KeyStore"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="com.amazonaws.services.iot.client.AWSIotMessage"/>
+<fullyQualifiedTypeName name="com.amazonaws.services.iot.client.AWSIotQos"/>
+<fullyQualifiedTypeName name="com.amazonaws.services.iot.client.sample.sampleUtil.SampleUtil"/>
+<fullyQualifiedTypeName name="com.amazonaws.services.iot.client.sample.sampleUtil.SampleUtil.KeyStorePasswordPair"/>
+<fullyQualifiedTypeName name="com.amazonaws.services.iot.client.sample.pubSub.NonBlockingPublishListener"/>
+<fullyQualifiedTypeName name="com.amazonaws.services.iot.client.sample.pubSub.TestTopicListener"/>
+<fullyQualifiedTypeName name="com.amazonaws.services.iot.client.AWSIotTopic"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.QueryFactory"/>
+<fullyQualifiedTypeName name="javax.management.Query"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.Query"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.QueryExecutionFactory"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.QueryExecution"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.ResultSet"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.ResultSetFormatter"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.InputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="org.apache.http.client.HttpClient"/>
+<fullyQualifiedTypeName name="org.apache.http.client.methods.HttpGet"/>
+<fullyQualifiedTypeName name="org.apache.http.HttpResponse"/>
+<fullyQualifiedTypeName name="org.apache.http.StatusLine"/>
+<fullyQualifiedTypeName name="org.apache.http.HttpEntity"/>
+<fullyQualifiedTypeName name="org.eclipse.jetty.util.log.Log"/>
+<fullyQualifiedTypeName name="org.apache.jena.atlas.logging.Log"/>
+<fullyQualifiedTypeName name="org.apache.commons.logging.Log"/>
+<fullyQualifiedTypeName name="org.apache.http.client.ClientProtocolException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="org.apache.http.impl.client.DefaultHttpClient"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.apache.jena.sparql.function.library.e"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="javax.management.timer.Timer"/>
+<fullyQualifiedTypeName name="javax.swing.Timer"/>
+<fullyQualifiedTypeName name="org.apache.jena.atlas.lib.Timer"/>
+<fullyQualifiedTypeName name="java.util.Timer"/>
+</qualifiedTypeNameHistroy>

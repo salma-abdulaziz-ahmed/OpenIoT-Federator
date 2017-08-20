@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects>
+  <project name="utils.commons"/>
+ </depends-on-projects>
+ <used-by-projects>
+  <project name="sdum.core"/>
+  <project name="security.management"/>
+  <project name="ui.schemaeditor"/>
+  <project name="ui.requestDefinition"/>
+  <project name="ui.requestPresentation"/>
+  <project name="scheduler.core"/>
+  <project name="lsm-light.server"/>
+  <project name="security.server"/>
+  <project name="lsm-light.client"/>
+ </used-by-projects>
+ <paths>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/jboss/resteasy/resteasy-jaxrs/2.3.5.Final/resteasy-jaxrs-2.3.5.Final.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.4/jaxb-impl-2.2.4.jar"/>
+  <path value="/security.client/src/main/resources/META-INF/openiot.taglib.xml">
+   <libraries>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/src-3/meta-inf/openiot.taglib.xml" project="security.client"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/jboss/resteasy/resteasy-jaxb-provider/2.3.5.Final/resteasy-jaxb-provider-2.3.5.Final.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.0.6/jackson-core-2.0.6.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/apache/httpcomponents/httpcore/4.1.2/httpcore-4.1.2.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/apache/httpcomponents/httpclient/4.1.2/httpclient-4.1.2.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/scannotation/scannotation/1.0.3/scannotation-1.0.3.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/apache/shiro/shiro-ehcache/1.2.3/shiro-ehcache-1.2.3.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/net/sf/ehcache/ehcache-core/2.5.0/ehcache-core-2.5.0.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/apache/shiro/shiro-faces/2.0-SNAPSHOT/shiro-faces-2.0-SNAPSHOT.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-shiro-faces-2.0-SNAPSHOT.jar/meta-inf/faces-config.xml" project="ui.requestPresentation"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-shiro-faces-2.0-SNAPSHOT.jar/meta-inf/shiro-faces.taglib.xml" project="ui.requestPresentation"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/Users/salmaabdulaziz/.m2/repository/javassist/javassist/3.8.0.GA/javassist-3.8.0.GA.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.0.6/jackson-databind-2.0.6.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/javax/xml/bind/jaxb-api/2.2.3/jaxb-api-2.2.3.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/scribe/scribe/1.3.3/scribe-1.3.3.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.0.6/jackson-annotations-2.0.6.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/pac4j/pac4j-core/1.4.1/pac4j-core-1.4.1.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/javax/faces/javax.faces-api/2.2/javax.faces-api-2.2.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/jboss/resteasy/jaxrs-api/2.3.5.Final/jaxrs-api-2.3.5.Final.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar"/>
+  <path value="/security.client/src/main/resources/META-INF/openiot.tld">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/src-3/meta-inf/openiot.tld" project="security.client"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/Users/salmaabdulaziz/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/pac4j/pac4j-oauth/1.4.1/pac4j-oauth-1.4.1.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/apache/shiro/shiro-core/1.2.3/shiro-core-1.2.3.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/io/buji/buji-pac4j/1.2.1/buji-pac4j-1.2.1.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar"/>
+  <path value="/Users/salmaabdulaziz/.m2/repository/org/apache/shiro/shiro-web/1.2.3/shiro-web-1.2.3.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-shiro-web-1.2.3.jar/meta-inf/shiro.tld" project="ui.schemaeditor"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/Users/salmaabdulaziz/.m2/repository/junit/junit/4.11/junit-4.11.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jboss.cdi.core"/>
+  <el>
+   <linked-el length="29" name="%0" offset="644" path="%1"/>
+   <linked-el length="14" name="%2" offset="983" path="%1"/>
+   <linked-el length="14" name="%2" offset="1020" path="%1"/>
+   <linked-el length="20" name="%3" offset="1642" path="%1"/>
+   <linked-el length="16" name="%4" offset="2283" path="%1"/>
+   <linked-el length="16" name="%4" offset="2435" path="%1"/>
+   <linked-el length="20" name="%5" offset="1642" path="%1"/>
+   <linked-el length="12" name="%6" offset="1391" path="%1"/>
+   <linked-el length="16" name="%7" offset="2283" path="%1"/>
+   <linked-el length="16" name="%7" offset="2435" path="%1"/>
+   <linked-el length="14" name="%8" offset="983" path="%1"/>
+   <linked-el length="14" name="%8" offset="1020" path="%1"/>
+   <linked-el length="20" name="%9" offset="1642" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="basedir" value="%0"/>
+  <alias path="jdk" value="%2"/>
+  <alias path="version.jboss.bom" value="%3"/>
+  <alias path="shiro" value="%4"/>
+  <alias path="version.jboss" value="%5"/>
+  <alias path="/security.client/pom.xml" value="%1"/>
+  <alias path="skipTests" value="%6"/>
+  <alias path="shiro.version" value="%7"/>
+  <alias path="jdk.version" value="%8"/>
+  <alias path="version" value="%9"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>
