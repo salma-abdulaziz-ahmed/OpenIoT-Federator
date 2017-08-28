@@ -2,10 +2,6 @@
 <section name="Workbench">
 	<item value="/Users/salmaabdulaziz/Desktop/aws-iot-device-sdk-java-1.0.1/lib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="480,442" key="UserLibraryLoadSaveDialog.size"/>
-	<section name="RefactoringWizard.preview">
-		<item value="600" key="width"/>
-		<item value="400" key="height"/>
-	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="updateQualifiedNames"/>
 		<item value="*" key="patterns"/>
@@ -24,11 +20,113 @@
 		<item value="false" key="create_constructor"/>
 		<item value="true" key="create_unimplemented"/>
 	</section>
-	<section name="ClasspathContainerSelectionPage">
-		<item value="0" key="index"/>
-	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="600" key="width"/>
+		<item value="400" key="height"/>
+	</section>
+	<section name="javadoc">
+		<item value="public" key="access"/>
+		<item value="false" key="noindex"/>
+		<item value="/Users/salmaabdulaziz/Desktop/Masters/Implementation/federator.core/javadoc.xml" key="antpath"/>
+		<item value="false" key="nodeprecatedlist"/>
+		<item value="true" key="use"/>
+		<item value="true" key="author"/>
+		<item value="false" key="nodeprecated"/>
+		<item value="false" key="nonavbar"/>
+		<item value="" key="docletpath"/>
+		<item value="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin/javadoc" key="javadoc_command_history"/>
+		<item value="1.8" key="source"/>
+		<item value="true" key="version"/>
+		<item value="Federator_doc" key="doctitle"/>
+		<item value="" key="docletname"/>
+		<item value="true" key="splitindex"/>
+		<item value="true" key="fromStandard"/>
+		<item value="false" key="notree"/>
+		<item value="/Users/salmaabdulaziz/Desktop/Masters/Implementation/federator.core/doc" key="destdir"/>
+		<item value="false" key="openinbrowser"/>
+		<section name="projects">
+			<section name="security.server">
+				<item value="/openiot-0.6.1/modules/security/security-server/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/modules/security/security-server/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="ui.requestPresentation">
+				<item value="/openiot-0.6.1/ui/ui.requestPresentation/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/ui/ui.requestPresentation/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="sdum.core">
+				<item value="/openiot-0.6.1/modules/sdum/sdum.core/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/modules/sdum/sdum.core/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="utils.commons">
+				<item value="/openiot-0.6.1/utils/utils.commons/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/utils/utils.commons/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="federator.core">
+				<item value="/Users/salmaabdulaziz/Desktop/Masters/Implementation/federator.core/javadoc.xml" key="antpath"/>
+				<item value="/Users/salmaabdulaziz/Desktop/Masters/Implementation/federator.core/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="lsm-light.client">
+				<item value="/openiot-0.6.1/modules/lsm-light/lsm-light.client/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/modules/lsm-light/lsm-light.client/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="RemoteSystemsTempFiles">
+				<item value="/Users/salmaabdulaziz/Desktop/Masters/Implementation/RemoteSystemsTempFiles/javadoc.xml" key="antpath"/>
+				<item value="/Users/salmaabdulaziz/Desktop/Masters/Implementation/RemoteSystemsTempFiles/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="ui.schemaeditor">
+				<item value="/openiot-0.6.1/ui/ui.schemaeditor/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/ui/ui.schemaeditor/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="scheduler.core">
+				<item value="/openiot-0.6.1/modules/scheduler/scheduler.core/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/modules/scheduler/scheduler.core/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="lsm-light.server">
+				<item value="/openiot-0.6.1/modules/lsm-light/lsm-light.server/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/modules/lsm-light/lsm-light.server/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="xgsn">
+				<item value="/openiot-0.6.1/modules/x-gsn/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/modules/x-gsn/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="security.management">
+				<item value="/openiot-0.6.1/modules/security/security-management/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/modules/security/security-management/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="ui.requestCommons">
+				<item value="/openiot-0.6.1/ui/ui.requestCommons/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/ui/ui.requestCommons/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="ui.requestDefinition">
+				<item value="/openiot-0.6.1/ui/ui.requestDefinition/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/ui/ui.requestDefinition/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="security.client">
+				<item value="/openiot-0.6.1/modules/security/security-client/javadoc.xml" key="antpath"/>
+				<item value="/openiot-0.6.1/modules/security/security-client/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+		</section>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="0" key="index"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
@@ -42,6 +140,13 @@
 	</section>
 	<section name="NewPackageWizardPage">
 		<item value="false" key="create_package_info_java"/>
+	</section>
+	<section name="JavadocWizardDialog">
+		<item value="600" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
+		<item value="534" key="DIALOG_HEIGHT"/>
+		<item value="256" key="DIALOG_X_ORIGIN"/>
+		<item value="33" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

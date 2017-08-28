@@ -4,15 +4,15 @@
   <project name="utils.commons"/>
  </depends-on-projects>
  <used-by-projects>
-  <project name="sdum.core"/>
+  <project name="ui.requestPresentation"/>
   <project name="security.management"/>
   <project name="ui.schemaeditor"/>
   <project name="ui.requestDefinition"/>
-  <project name="ui.requestPresentation"/>
-  <project name="scheduler.core"/>
-  <project name="lsm-light.server"/>
   <project name="security.server"/>
+  <project name="scheduler.core"/>
   <project name="lsm-light.client"/>
+  <project name="lsm-light.server"/>
+  <project name="sdum.core"/>
  </used-by-projects>
  <paths>
   <path value="/Users/salmaabdulaziz/.m2/repository/org/jboss/resteasy/resteasy-jaxrs/2.3.5.Final/resteasy-jaxrs-2.3.5.Final.jar"/>

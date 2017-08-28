@@ -12,11 +12,17 @@ public class SubscribeTopicListener extends AWSIotTopic {
 	
 	public static String availableSparqlEndpoint;
 
+	/**
+	 * the class constructor
+	 */
     public SubscribeTopicListener(String topic, AWSIotQos qos) {
         super(topic, qos);
     }
 
     @Override
+    /**
+   	 * this function executes when a subscribe topic matches a publish topic
+   	 */
     public void onMessage(AWSIotMessage message) {
     	availableSparqlEndpoint="SparqlEndPoint for Subscribed Topic: " + message.getTopic() + message.getStringPayload();
         System.out.println("SparqlEndPoint for Subscribed Topic: " + message.getTopic() + message.getStringPayload());

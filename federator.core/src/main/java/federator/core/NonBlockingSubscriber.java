@@ -5,7 +5,13 @@ import com.amazonaws.services.iot.client.AWSIotMqttClient;
 import com.amazonaws.services.iot.client.AWSIotQos;
 import com.amazonaws.services.iot.client.AWSIotTopic;
 
-//This class is to run the openIoT publisher as a subscriber and subscribe the topics to AWS IoT
+
+/**
+ * This class is to run the openIoT publisher as a subscriber and subscribe the topics to AWS IoT
+ */
+
+
+
 public class NonBlockingSubscriber implements Runnable {
 	
 	
@@ -14,6 +20,9 @@ public class NonBlockingSubscriber implements Runnable {
        public AWSIotMqttClient awsIotClient;
      
        
+       /**
+     	 * This class constructor
+     	 */
 
        public NonBlockingSubscriber(AWSIotMqttClient awsIotClient,String SubscribeTopic) {
            this.awsIotClient = awsIotClient;

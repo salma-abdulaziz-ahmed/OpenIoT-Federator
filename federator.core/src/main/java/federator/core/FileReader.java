@@ -11,7 +11,13 @@ public class FileReader {
 	
 	 private static final String PropertyFile = "aws-iot-sdk-samples.properties";
 	 
-	 /*this method is to read any configurations from the properties file*/
+	 
+	 /**
+	   	 * This function to read any configurations from the properties file
+	   	 *
+	   	 * @param name which is the variable name to be read
+	   	 * @return the value of the variable in configuration file
+	   	 */
 	 public  static String getConfig(String name) {
 	        Properties prop = new Properties();
 	        URL resource = FileReader.class.getResource(PropertyFile);

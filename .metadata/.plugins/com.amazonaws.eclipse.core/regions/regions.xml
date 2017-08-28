@@ -155,6 +155,7 @@
       <service name="CodeCommit">https://codecommit.us-west-1.amazonaws.com</service>
       <service name="CloudWatchEvents">https://events.us-west-1.amazonaws.com/</service>
       <service name="KMS">https://kms.us-west-1.amazonaws.com</service>
+      <service name="CodeStar">https://codestar.us-west-1.amazonaws.com</service>
     </services>
   </region>
 
@@ -247,6 +248,7 @@
       <service name="Logs">https://logs.eu-west-2.amazonaws.com/</service>
       <service name="CodeCommit">https://codecommit.eu-west-2.amazonaws.com</service>
       <service name="KMS">https://kms.eu-west-2.amazonaws.com</service>
+      <service name="CodeStar">https://codestar.eu-west-2.amazonaws.com</service>
     </services>
   </region>
 

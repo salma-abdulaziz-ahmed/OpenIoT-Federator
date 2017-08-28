@@ -15,7 +15,12 @@ public class PublishTopicListener extends AWSIotMessage {
 	public static String availableSparqlEndpoint;
 	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss:mm:mm");
 
-    public PublishTopicListener(String topic, AWSIotQos qos, String payload) {
+    
+	
+	/**
+	 * the class constructor
+	 */
+	public PublishTopicListener(String topic, AWSIotQos qos, String payload) {
         super(topic, qos, payload);
     }
 
@@ -23,6 +28,9 @@ public class PublishTopicListener extends AWSIotMessage {
 
     
     @Override
+    /**
+	 * this function executes when the message is published successfully
+	 */
     public void onSuccess() {
     	availableSparqlEndpoint="SparqlEndpoint for publishedTopic: " + getTopic() + getStringPayload();
         System.out.println(availableSparqlEndpoint);
@@ -33,11 +41,19 @@ public class PublishTopicListener extends AWSIotMessage {
        // System.out.println(dateFormat.format(afterQuery)); 
     }
 
+    
+    /**
+   	 * this function executes when the message sending fails
+   	 */
     @Override
     public void onFailure() {
         System.out.println(System.currentTimeMillis() + ": publish failed for " + getStringPayload());
     }
 
+    
+    /**
+   	 * this function executes when the message sending times-out
+   	 */
     @Override
     public void onTimeout() {
         System.out.println(System.currentTimeMillis() + ": publish timeout for " + getStringPayload());

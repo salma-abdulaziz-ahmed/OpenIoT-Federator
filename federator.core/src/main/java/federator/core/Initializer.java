@@ -41,8 +41,14 @@ public class Initializer {
 	static DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss:mm:mm");
 	
 	
+
+	/**
+	 * This function gets the array of all published topics
+	 *
+	 * @param publishSensorInfo  which is the information about the publishing sensors
+	 * @return the array of all published topics
+	 */
 	
-//This function is to get the list of all published topics	
     public static String[] getPublishTopicsArray(String publishSensorInfo) {
        String[] PublishSensorInfo = publishSensorInfo.split("new");
        /*for(int i=0;i<PublishSensorInfo.length;i++){  
@@ -64,9 +70,12 @@ public class Initializer {
     
 
 
-    
-    
-   //This function is to get the location of sensors publishing their data to AWS IoT 
+    /**
+	 * This function is to get the location of sensors publishing their data to AWS IoT 
+	 *
+	 * @param publishSensorInfo  which is the information about the publishing sensors
+	 * @return an array of all the locations of the publishing sensors
+	 */
     public static String[] getPublishLocationsArray(String publishSensorInfo) {
     	 String[] PublishSensorInfo = publishSensorInfo.split("new");
          /* for(int i=0;i<PublishSensorInfo.length;i++){
@@ -87,16 +96,26 @@ public class Initializer {
     
     
     
-    
-/* This function reads the SPARQL endpoint from the properties file*/
+    /**
+   	 * This function reads the SPARQL endpoint from the properties file
+   	 *
+   	 * @param arguments  the properties file
+   	 * @return the sparqlEndpoint of the publishinf platform
+   	 */ 
     public static String getSparqlEndpoint(CommandArguments arguments) {
     	SparqlEndpoint= arguments.getNotNull("SparqlEndpoint", FileReader.getConfig("SparqlEndpoint"));
         return SparqlEndpoint;
        
     }
 
-   /*This function initializes the client(OpenIoT platform) to be connected to AWS IoT by reading AWS clientEndpoint, the certificate file
-    *  and the private key file from the properties file*/
+    
+    /**
+   	 * This function initializes the client(OpenIoT platform) to be connected to AWS IoT by reading AWS clientEndpoint, the certificate file
+     *  and the private key file from the properties file
+   	 *
+   	 * @param arguments  the properties file
+   	 * @return the  initialized AWS IoT client (OpenIoT platform)
+   	 */ 
     public static AWSIotMqttClient getClient(CommandArguments arguments) {
         AWSIotMqttClient awsIotClient=null;
         String clientEndpoint = arguments.getNotNull("clientEndpoint", FileReader.getConfig("clientEndpoint"));
@@ -133,7 +152,12 @@ public class Initializer {
     }
     
     
-//This function runs a SPARQL query to OpenIoT Triplestore to get the sensor metadata
+    /**
+   	 * This function runs a SPARQL query to OpenIoT Triplestore to get the sensor metadata
+   	 *
+   	 * @param SparqlEndpoint which is the sparqlEndpoint of the publishing platform
+   	 * @return the  JSONArray of the available sensors description
+   	 */ 
     public static JSONArray getRawSensorsInformation(String SparqlEndpoint) {
     	
     	
@@ -194,7 +218,13 @@ public class Initializer {
     }
     
     
-    //This function is to display the raw sensor information in a neat way
+    
+    
+    
+    /**
+   	 * This function is to display the raw sensor information in a neat way
+   	 * @return the JSONArray of the available sensors description
+   	 */ 
     public static JSONArray getSensorInfo(){
     	JSONArray sensors=getRawSensorsInformation(SparqlEndpoint);
     	String []Items=new String[4];
@@ -226,7 +256,15 @@ public class Initializer {
     }
     
     
-  //this function is to translate the longitude and latitude to a readable address using google maps API
+   
+    
+    /**
+   	 * This function is to translate the longitude and latitude to a readable address using google maps API
+   	 *
+   	 * @param sensorType which is the type of sensor attached to the publishing platform
+   	 * @return the address of the attached sensor
+   	 */ 
+
 	public static  String getSensorLocation(String sensorType) {
 	   latitude=getLatitude(sensorType);
 	   longitude=getLongitude(sensorType);
@@ -245,7 +283,14 @@ public class Initializer {
    	}
 
    
-	//this function is to translate the longitude and latitude to a readable address using google maps API
+	
+	
+	 /**
+   	 * This function is to connect to Google maps API for translation
+   	 *
+   	 * @param address which is the longitude and latitude of the sensor
+   	 * @return the address of the attached sensor
+   	 */ 
 	public static String readSensorLocationFeed(String address) {
    	   StringBuilder builder = new StringBuilder();
    	   HttpClient client=new DefaultHttpClient();
@@ -277,7 +322,13 @@ public class Initializer {
    	} 
 	
 	
-	//This function is to get the latitude of a certain sensor type
+	
+	/**
+   	 * This function is to get the latitude of a sensor
+   	 *
+   	 * @param sensorType which is the type of the attached sensor
+   	 * @return the latitude of the attached sensor
+   	 */
 	public static String getLatitude(String sensorType){
 	
 		JSONArray sensorInfo=Initializer.getRawSensorsInformation(SparqlEndpoint);
@@ -292,7 +343,12 @@ public class Initializer {
 		return "sensor not found";
 	}
 	
-	//This function is to get the longitude of a certain sensor type
+	/**
+   	 * This function is to get the longitude of a sensor
+   	 *
+   	 * @param sensorType which is the type of the attached sensor
+   	 * @return the longitude of the attached sensor
+   	 */
 	public static String getLongitude(String sensorType){
 		JSONArray sensorInfo=Initializer.getRawSensorsInformation(SparqlEndpoint);
 		String[] Items;

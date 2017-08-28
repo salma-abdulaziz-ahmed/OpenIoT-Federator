@@ -7,6 +7,12 @@ import com.amazonaws.services.iot.client.AWSIotQos;
 
 
 
+
+/**
+  * This class is to run the openIoT publisher as a thread and publish the topics to AWS IoT
+  */
+
+
 public class NonBlockingPublisher implements Runnable {
 	
 	        public String PublishTopic;
@@ -15,6 +21,10 @@ public class NonBlockingPublisher implements Runnable {
 	        public String SparqlEndpoint;
 	        public String location;
 	        
+
+	        /**
+	      	 * This class constructor
+	      	 */
 
 	        public NonBlockingPublisher(AWSIotMqttClient awsIotClient,String PublishTopic,String SparqlEndpoint,String location) {
 	            this.awsIotClient = awsIotClient;

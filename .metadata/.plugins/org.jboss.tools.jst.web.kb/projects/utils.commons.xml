@@ -2,17 +2,17 @@
 <kb-project>
  <depends-on-projects/>
  <used-by-projects>
-  <project name="sdum.core"/>
+  <project name="ui.requestPresentation"/>
   <project name="security.management"/>
   <project name="ui.schemaeditor"/>
   <project name="ui.requestDefinition"/>
-  <project name="ui.requestCommons"/>
-  <project name="ui.requestPresentation"/>
-  <project name="scheduler.core"/>
-  <project name="security.client"/>
-  <project name="lsm-light.server"/>
   <project name="security.server"/>
+  <project name="scheduler.core"/>
   <project name="lsm-light.client"/>
+  <project name="lsm-light.server"/>
+  <project name="ui.requestCommons"/>
+  <project name="sdum.core"/>
+  <project name="security.client"/>
  </used-by-projects>
  <paths>
   <path value="/Users/salmaabdulaziz/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar"/>

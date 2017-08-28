@@ -42,8 +42,10 @@ public class Main {
     	awsIotClient = Initializer.getClient(arguments); 
     	awsIotClient.connect(); //OpenIoT connects to AWS IoT 
     	   	
-       //http://localhost:4567/
-       //rest call to get all the available sensors in openIoT triplestore
+    	/**
+       	 * This function is the rest call to get all the available sensors in openIoT triplestore and send them to the UI
+       	 * http://localhost:4567/getAvailableSensors
+       	 */
         get("/getAvailableSensors", (request, response) -> {
             JSONObject result = new JSONObject();
             JSONArray AvailableSensors = Initializer.getSensorInfo();
@@ -53,7 +55,11 @@ public class Main {
             return res;
         });
 
-        //rest call to post the published topic to AWS IoT
+        
+        /**
+       	 * This function is the rest call to post the published topic to AWS IoT
+       	 * http://localhost:4567/postPublishTopic
+       	 */
         post("/postPublishTopic", (request, response) -> {
         	publishSensorInfo=publishSensorInfo+request.queryParams("publishTopic")+"new";
             //System.out.println(publishSensorInfo);
@@ -76,7 +82,10 @@ public class Main {
             
         });
         
-       //rest call to post subscribed topic to AWS IoT
+        /**
+       	 * This function is the rest call to post the subscribed topic to AWS IoT
+       	 * http://localhost:4567/postSubscribeTopic
+       	 */
         post("/postSubscribeTopic", (request, response) -> {
         	
         	subscribeTopic=request.queryParams("subscribeTopic");
@@ -94,7 +103,11 @@ public class Main {
         });
         
         
-        //rest call to get the endpoint of the publishing client
+        /**
+       	 * This function is the rest call to get the endpoint of the publishing client
+       	 * http://localhost:4567/getEndpoint
+       	 */
+     
         get("/getEndpoint", (request, response) -> {
             JSONObject result = new JSONObject();
             result.put("result", SubscribeTopicListener.availableSparqlEndpoint);

@@ -4,8 +4,8 @@
   <project name="utils.commons"/>
  </depends-on-projects>
  <used-by-projects>
-  <project name="ui.requestDefinition"/>
   <project name="ui.requestPresentation"/>
+  <project name="ui.requestDefinition"/>
  </used-by-projects>
  <paths>
   <path value="/Users/salmaabdulaziz/.m2/repository/org/jboss/resteasy/resteasy-jaxrs/2.3.1.GA/resteasy-jaxrs-2.3.1.GA.jar"/>
