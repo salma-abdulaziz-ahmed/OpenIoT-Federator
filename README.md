@@ -28,6 +28,9 @@ The Public key file
 9) use the publish UI page to publish platform management data
 
 10) use the subscribe UI to subscribe to a certain topic and find the SPARQL endpoint
+
+# The Federator Demo:
+ Please see the Wiki
  
 
 
