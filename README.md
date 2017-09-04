@@ -1,6 +1,14 @@
 # OpenIoT-Federator
 
-In order to get this code working you need to:
+# The Project Overview
+The objective of this project is the deployment of publish/subscribe IoT Services for multi-query federated support using OpenIoT platform
+OpenIoT platform solved data interoperability problem by using semantic technologies like the OpenIoT ontology and linked data concepts. however, different OpenIoT instances deployed in different locations can not discover each other and accordingly they can not query each others’ sensor data. The goal of this project is to enable platform discovery in OpenIoT and interconnect different OpenIoT instances in different locations. AWS IoT is used as a central registry for platform discovery where MQTT publish/subscribe protocol is used to enable federation and exchange management metadata. Using the management metadata, each OpenIoT deployment is aware of the existence of other instances which enables the execution of distributed queries to other platforms accessing their management data
+
+# The Architecture and Data Flow Diagram:
+Please see the Wiki
+
+
+# How ti install and use the code:
 
 1) create an account on AWS IoT
 2) create a new OpenIoT thing in Registry 
@@ -20,6 +28,7 @@ The Public key file
 9) use the publish UI page to publish platform management data
 
 10) use the subscribe UI to subscribe to a certain topic and find the SPARQL endpoint
+ 
 
 
 
